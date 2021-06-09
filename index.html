@@ -188,8 +188,11 @@
         {
             var menuItem = menuItems[i];
 
-            menuItem.onclick = function() {
+            menuItem.onclick = function(event) {
+                var isParentMenu=this.nextElementSibling &&this.nextElementSibling.classList.contains('subnav');
+               if (!isParentMenu) {
                 header.style.height = null;
+               } 
         }
     }
     </script>
