@@ -38,4 +38,8 @@
     .contact-form{
         margin-top: 15px;
     }
+    #nav li a{
+        width: 100%;
+        display: block;
+    }
 }
